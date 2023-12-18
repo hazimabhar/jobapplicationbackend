@@ -8,7 +8,7 @@ function sendEmail(info){
     let subject = info.subject
     let message = info.message
 
-    var transporter = nodemailer.createTransport({
+    let transporter = nodemailer.createTransport({
         service : 'gmail',
         auth : {
             user:  username,
@@ -16,7 +16,7 @@ function sendEmail(info){
         }
     })
     
-    var mailOptions = {
+    let mailOptions = {
         from : username,
         to : recipients,
         subject : subject,   
