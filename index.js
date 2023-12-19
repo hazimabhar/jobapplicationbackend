@@ -45,8 +45,8 @@ app.post('/api/v1/email', async (req, res)=>{
             resume: req.files.fileUpload
         }
  
-        console.log(info)
-        // sendEmail(info)
+        // console.log(info)
+        sendEmail(info)
     }
     res.json("OK")
 
